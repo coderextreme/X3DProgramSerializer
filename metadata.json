@@ -1,0 +1,6 @@
+{
+  "name": "X3D DOM Polyglot Serializer Framework",
+  "description": "Unified Java framework ported from Node.js to serialize X3D XML DOM into X3DJSAIL-compliant source code across Java, GraalJS, GraalPy, Clojure, JRuby, and TruffleRuby with parent-child containerField mapping tables.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

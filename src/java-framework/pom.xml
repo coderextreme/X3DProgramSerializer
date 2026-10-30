@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.coderextreme.x3d</groupId>
+    <artifactId>x3d-polyglot-serializer-framework</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>X3D Polyglot Serializer Framework</name>
+    <description>Unified Java Framework to serialize X3D XML DOM into source code for Java (X3DJSAIL), GraalJS, GraalPy, Clojure, JRuby, and TruffleRuby.</description>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <x3djsail.version>4.0.0</x3djsail.version>
+    </properties>
+
+    <dependencies>
+        <!-- X3DJSAIL: Extensible 3D (X3D) Java Scene Access Interface Library -->
+        <dependency>
+            <groupId>org.web3d.x3d</groupId>
+            <artifactId>X3DJSAIL</artifactId>
+            <version>4.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Standard XML DOM APIs are built into Java SE runtime (javax.xml.parsers, org.w3c.dom) -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>net.coderextreme.x3d.serializer.DOMSerializerCli</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
