@@ -107,6 +107,12 @@ public class ParentChildMappingTable {
         addOverride("Scene", "MetadataString", "addMetadata");
         addOverride("Scene", "MetadataSet", "addChildren");
         addOverride("field", "HAnimJoint", "addChild");
+        addOverride("field", "Shape", "addChild");
+        addOverride("fieldValue", "Shape", "addChild");
+        addOverride("ProtoBody", "Transform", "addChild");
+        addOverride("Scene", "ProtoDeclare", "addChild");
+        addOverride("Scene", "ProtoInstance", "addChild");
+        addOverride("Transform", "ProtoInstance", "addChild");
     }
 
     private static void initMapToMethod() {
