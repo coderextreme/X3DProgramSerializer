@@ -98,5 +98,6 @@ X3D0.setScene(Scene7)
 
 # Serialization to files
 X3D0.toFileX3D("abox.new.graalpy.x3d")
+X3D0.toFileJSON("abox.new.graalpy.x3dj")
 x3djson = X3D0.toStringJSON()
 validateX3DJSON(False, x3djson)
