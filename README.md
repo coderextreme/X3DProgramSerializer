@@ -43,3 +43,10 @@ java -cp target/x3d-polyglot-serializer-framework-1.0.0.jar net.coderextreme.x3d
 
 java -cp target/x3d-polyglot-serializer-framework-1.0.0.jar net.coderextreme.x3d.serializer.DOMSerializerCli ~/X3DJSONLD/src/main/data/abox.x3d graaljs abox.new.js
 ~/Downloads/graaljs-community-jvm-25.0.2-windows-amd64/graaljs-community-jvm-25.0.2-windows-amd64/bin/js --experimental-options --polyglot --vm.Djs.allowAllAccess=true --jvm --vm.classpath="../../../X3DJSONLD/X3DJSAIL.4.0.full.jar" abox.new.js
+
+## Java example
+
+java -cp target/x3d-polyglot-serializer-framework-1.0.0.jar net.coderextreme.x3d.serializer.DOMSerializerCli ~/X3DJSONLD/src/main/data/abox.x3d java abox.java
+javac -classpath "../../../X3DJSONLD/X3DJSAIL.4.0.full.jar" abox.java
+java -classpath "../../../X3DJSONLD/X3DJSAIL.4.0.full.jar:." abox
+

@@ -45,7 +45,7 @@ public class JavaSerializer implements LanguageSerializer {
         String pkg = options.getPackageName() != null ? options.getPackageName() : "net.coderextreme.data";
 
         StringBuilder sb = new StringBuilder();
-        sb.append("package ").append(pkg).append(";\n\n");
+        // sb.append("package ").append(pkg).append(";\n\n");
         sb.append("import org.web3d.x3d.jsail.*;\n");
         sb.append("import org.web3d.x3d.jsail.CADGeometry.*;\n");
         sb.append("import org.web3d.x3d.jsail.Core.*;\n");
